@@ -1,1 +1,2 @@
-unique.log
+node_modules
+*.log
