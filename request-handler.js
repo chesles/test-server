@@ -1,6 +1,7 @@
 var request_counter = require('./request-counter')
   , unique_enforcer = require('./unique-enforcer')
   , get_value = require('./get-value')
+  , redirect = require('./redirector')
 
 var counter = request_counter()
   , check_unique = unique_enforcer()
@@ -16,7 +17,8 @@ module.exports = {
         { method: delay_response, assign: 'delay' },
         { method: counter,        assign: 'stats' },
       ],
-    ]
+      { method: redirect },
+    ],
   }
 }
 

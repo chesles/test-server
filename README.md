@@ -41,9 +41,16 @@ This one will be OK:
 
 Kill & restart the server to clear the set of values that have been seen.
 
+### redirects
+
+Pass a `location` and an optional `responsecode` parameter to make `test-server` return a redirect:
+
+    curl localhostT:2700 -d location=http://google.com -d responsecode=301
+
+`responsecode` defaults to 302 if `location` is present.
+
 ## TODO
 
-- redirects
 - set the status code
 - set cookies
 - set headers
