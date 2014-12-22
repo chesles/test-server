@@ -10,6 +10,6 @@
   "author": "John Chesley <john@chesl.es>",
   "license": "MIT",
   "dependencies": {
-    "hapi": "^6.11.0"
+    "hapi": "^8.0.0"
   }
 }
